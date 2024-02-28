@@ -1,11 +1,11 @@
 import nodeResolve from '@rollup/plugin-node-resolve';
 
-const externalPackages = ['@aegisjsproject/'];
+const externalPackages = ['@aegisjsproject/', 'highlight.js', 'marked', 'marked-highlight'];
 
 export default {
-	input: 'hello-world.js',
+	input: 'aegis-md.js',
 	output: {
-		file: 'hello-world.cjs',
+		file: 'aegis-md.cjs',
 		format: 'cjs',
 	},
 	plugins: [nodeResolve()],
