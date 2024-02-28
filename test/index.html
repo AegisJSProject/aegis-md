@@ -6,14 +6,15 @@
 		<meta name="color-scheme" content="light dark" />
 		<meta http-equiv="Content-Security-Policy" content="
 			default-src 'none';
-			style-src 'self' blob:;
-			script-src 'self' https://unpkg.com/@shgysk8zer0/ https://unpkg.com/@aegisjsproject/ 'sha384-PfbneRdWdsrYy+nQxEYkJJ8PZ4Z0KQ8/I/e59g1jJ92L7ModAR1A2AfHksjbLIfP';
-			connect-src 'self' https://icanhazdadjoke.com/;
+			style-src 'self' blob: https://unpkg.com/@highlightjs/;
+			script-src 'self' https://unpkg.com/@shgysk8zer0/ https://unpkg.com/@aegisjsproject/ 'sha384-PfbneRdWdsrYy+nQxEYkJJ8PZ4Z0KQ8/I/e59g1jJ92L7ModAR1A2AfHksjbLIfP' 'nonce-dfgdfg';
+			connect-src 'self' https://unpkg.com/@aegisjsproject/;
+			img-src 'self' https://img.shields.io/ https://github.com/AegisJSProject/;
 			trusted-types emtpy#html mepty#script sanitizer-raw#html;
 			require-trusted-types-for 'script';
 		" />
-		<title>@aegisjsproject/template</title>
-		<script type="importmap" integrity="sha384-PfbneRdWdsrYy+nQxEYkJJ8PZ4Z0KQ8/I/e59g1jJ92L7ModAR1A2AfHksjbLIfP">
+		<title>@aegisjsproject/aegis-md</title>
+		<script type="importmap" integrity="sha384-PfbneRdWdsrYy+nQxEYkJJ8PZ4Z0KQ8/I/e59g1jJ92L7ModAR1A2AfHksjbLIfP" nonce="dfgdfg">
 			{
 				"imports": {
 					"@aegisjsproject/core": "../node_modules/@aegisjsproject/core/core.js",
@@ -22,8 +23,14 @@
 					"@aegisjsproject/styles/": "../node_modules/@aegisjsproject/styles/",
 					"@aegisjsproject/component": "../node_modules/@aegisjsproject/component/component.js",
 					"@aegisjsproject/component/": "../node_modules/@aegisjsproject/component/",
-					"@aegisjsproject/template": "../hello-world.js",
-					"@aegisjsproject/template/": "../",
+					"@aegisjsproject/markdown": "../node_modules/@aegisjsproject/markdown/markdown.js",
+					"@aegisjsproject/markdown/": "../node_modules/@aegisjsproject/markdown/",
+					"@aegisjsproject/aegis-md": "../aegis-md.js",
+					"@aegisjsproject/aegis-md/": "../",
+					"highlight.js": "../node_modules/@highlightjs/cdn-assets/es/highlight.min.js",
+					"highlight.js/": "../node_modules/@highlightjs/cdn-assets/",
+					"marked": "../node_modules/marked/lib/marked.esm.js",
+					"marked-highlight": "../node_modules/marked-highlight/src/index.js",
 					"@shgysk8zer0/": "https://unpkg.com/@shgysk8zer0/"
 				}
 			}
@@ -33,11 +40,23 @@
 		<script type="module" src="./index.js" referrerpolicy="no-referrer"></script>
 	</head>
 	<body>
-		<header>
-			<hello-world></hello-world>
-		</header>
-		<main>
-			<dad-joke></dad-joke>
-		</main>
+		<nav>
+			<button type="button" data-readme="https://unpkg.com/@aegisjsproject/core/README.md">
+				<code>@aegisjsproject/core</code>
+			</button>
+			<button type="button" data-readme="https://unpkg.com/@aegisjsproject/styles/README.md">
+				<code>@aegisjsproject/styles</code>
+			</button>
+			<button type="button" data-readme="https://unpkg.com/@aegisjsproject/component/README.md">
+				<code>@aegisjsproject/component</code>
+			</button>
+			<button type="button" data-readme="https://unpkg.com/@aegisjsproject/markdown/README.md">
+				<code>@aegisjsproject/markdown</code>
+			</button>
+		</nav>
+		<aegis-md>
+			<div slot="markdown"># Hello, World!</div>
+		</aegis-md>
+		<aegis-md src="../README.md" loading="lazy"></aegis-md>
 	</body>
 </html>

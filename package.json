@@ -1,7 +1,7 @@
 {
-  "name": "@aegisjsproject/tempplate",
-  "version": "0.0.3",
-  "description": "Template repository for `@aegisjsproject/component` components",
+  "name": "@aegisjsproject/aegis-md",
+  "version": "0.0.1",
+  "description": "A web component for securely rendering markdown using `@aegisjsproject/markdown` & `@aegisjsproject/component`",
   "keywords": [
     "aegis",
     "dom",
@@ -16,16 +16,17 @@
     "web-components",
     "component-library",
     "aegis-template",
-    "github-template"
+    "github-template",
+    "markdown"
   ],
   "type": "module",
-  "main": "./hello-world.cjs",
-  "module": "./hello-world.js",
-  "unpkg": "./hello-world.js",
+  "main": "./aegis-md.cjs",
+  "module": "./aegis-md.js",
+  "unpkg": "./aegis-md.js",
   "exports": {
     ".": {
-      "import": "./hello-world.js",
-      "require": "./hello-world.cjs"
+      "import": "./aegis-md.js",
+      "require": "./aegis-md.cjs"
     },
     "./*.js": {
       "import": "./*.js",
@@ -66,7 +67,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AegisJSProject/template.git"
+    "url": "git+https://github.com/AegisJSProject/aegis-md.git"
   },
   "author": "Chris Zuber <admin@kernvalley.us>",
   "license": "MIT",
@@ -81,9 +82,9 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/AegisJSProject/template/issues"
+    "url": "https://github.com/AegisJSProject/aegis-md/issues"
   },
-  "homepage": "https://github.com/AegisJSProject/template#readme",
+  "homepage": "https://github.com/AegisJSProject/aegis-md#readme",
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@shgysk8zer0/rollup-import": "^1.2.3",
@@ -94,6 +95,7 @@
   "dependencies": {
     "@aegisjsproject/component": "^0.1.0",
     "@aegisjsproject/core": "^0.1.0",
+    "@aegisjsproject/markdown": "^0.1.0",
     "@aegisjsproject/styles": "^0.1.0"
   }
 }
