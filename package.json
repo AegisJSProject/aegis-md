@@ -1,6 +1,6 @@
 {
   "name": "@aegisjsproject/aegis-md",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A web component for securely rendering markdown using `@aegisjsproject/markdown` & `@aegisjsproject/component`",
   "keywords": [
     "aegis",
@@ -93,9 +93,9 @@
     "rollup": "^4.12.0"
   },
   "dependencies": {
-    "@aegisjsproject/component": "^0.1.0",
-    "@aegisjsproject/core": "^0.1.0",
-    "@aegisjsproject/markdown": "^0.1.0",
-    "@aegisjsproject/styles": "^0.1.0"
+    "@aegisjsproject/component": "^0.1.1",
+    "@aegisjsproject/core": "^0.1.2",
+    "@aegisjsproject/markdown": "^0.1.1",
+    "@aegisjsproject/styles": "^0.1.1"
   }
 }
