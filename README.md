@@ -13,7 +13,7 @@ A web component for securely rendering markdown using `@aegisjsproject/markdown`
 
 [![npm](https://img.shields.io/npm/v/@aegisjsproject/aegis-md)](https://www.npmjs.com/package/@aegisjsproject/aegis-md)
 ![node-current](https://img.shields.io/node/v/@aegisjsproject/aegis-md)
-![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/%40aegisjsproject%aegis-md)
+![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/%40aegisjsproject%2Faegis-md)
 [![npm](https://img.shields.io/npm/dw/@aegisjsproject/aegis-md?logo=npm)](https://www.npmjs.com/package/@aegisjsproject/aegis-md)
 
 [![GitHub followers](https://img.shields.io/github/followers/AegisJSProject.svg?style=social)](https://github.com/AegisJSProoject)
