@@ -27,3 +27,20 @@ A web component for securely rendering markdown using `@aegisjsproject/markdown`
 - [Code of Conduct](./.github/CODE_OF_CONDUCT.md)
 - [Contributing](./.github/CONTRIBUTING.md)
 <!-- - [Security Policy](./.github/SECURITY.md) -->
+
+## Adding language support
+
+In order to reduce bundle size, only plaintext is available/supported by default. However, you can easily add support for additional languages in a variety of ways:
+
+### Registering from Static Imports
+
+**Note**: All languages provided by highlight.js may be found at [`/es/languages/${lang}.min.js`](https://unpkg.com/browse/@highlightjs/cdn-assets/es/languages/).
+
+```js
+import { HTMLAegisMDElement } from '@aegisjsproject/aegis-md';
+import javascript from 'highlight.js/lanuages/javascript.min.js';
+import xml from 'highlight.js/languages/xml.min.js';
+import css from 'highlight.js/languages/css.min.js';
+
+HTMLAegisMDElement.registerLanguages({ javascript, xml, css });
+```
