@@ -1,6 +1,6 @@
 {
   "name": "@aegisjsproject/aegis-md",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A web component for securely rendering markdown using `@aegisjsproject/markdown` & `@aegisjsproject/component`",
   "keywords": [
     "aegis",
